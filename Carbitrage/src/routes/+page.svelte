@@ -1,2 +1,45 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<div class="wrapper">
+    <h1>Carbitrage</h1>
+    <button>enter</button>
+</div>
+
+
+<style>
+    @font-face {
+        font-family: "Klarissa";
+        src: url("/fonts/Klarissa.ttf")
+    }
+
+    * {
+        font-family: "Klarissa";
+    }
+
+    :global(html), :global(body) {
+        background-color: #161616;
+        height: 100%;
+        width: 100%;
+    }
+
+    h1 {
+        color: #ff034a;
+        font-size: 32pt;
+    }
+
+    button {
+        background-color: #fff;
+        border: none;
+        border-radius: 50px;
+        width: 10rem;
+        height: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .wrapper {
+        height: 100%;
+        display: flex; 
+        flex-flow: column wrap;
+        place-items: center;
+        justify-content: center;
+    }
+
+</style>
